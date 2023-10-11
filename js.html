@@ -1,18 +1,20 @@
+
 <html>
     <head><h1>Factorial of a number</h1></head>
     <body>
         <script>
-            const num= prompt("Enter a number:");
-            if(num <0){
+            const num = prompt("Enter a number:");
+            if(num < 0){
                 document.write("Error.The factorial of negative number does not exist.")
             }
             else if(num == 0){
                 document.write("The factorial of 0 is 1.")
             }
             else{
-            for(let i=1; i < num ; i++)
-            {int k = i*num ;}
-            document.write('The factorial of '${num}' is '${k}.')
+            let k=1;
+            for(let i=1; i <= num ; i++)
+            { k *=i; }
+            document.write('The factorial of '+num+' is '+k);
             }
         </script>
     </body>
